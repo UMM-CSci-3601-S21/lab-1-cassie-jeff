@@ -50,23 +50,41 @@ h2 {
   background-color: #000;
   color:#ffde7a;
 }
-
-.cloud a{
-  font: 16px monospace;
-  list-style: square;
-  color:#ffde7a;
-}
 .version-control a{
   font-family:Helvetica;
+  color:orange;
+  text-decoration:none;
+}
+.version-control a:hover{
+  color:cyan;
+}
+.cloud a{
+  font: 16px Helvetica;
+  list-style: square;
   color:red;
 
 }
-.ide a{
-  color:#d5d6d2;
+.cloud a:hover{
+  color:fuchsia;
 }
+.ide a{
+  color:#ffde7a;
+  font: 16px monospace;
+  text-decoration:none;
 
+}
+.ide a:hover{
+  color:blanchedalmond;
+}
+.ide{
+  color:green;
+  text-decoration:none;
+}
 .testing a{
-  color:#f9f7f6;
+  color:greenyellow;
+}
+.testing a:hover{
+  color:limegreen;
 }
 
 #courses {
