@@ -46,6 +46,29 @@ h2 {
   max-width: 48em;
 }
 
+#tools{
+  background-color: #000;
+  color:#ffde7a;
+}
+
+.cloud a{
+  font: 16px monospace;
+  list-style: square;
+  color:#ffde7a;
+}
+.version-control a{
+  font-family:Helvetica;
+  color:red;
+
+}
+.ide a{
+  color:#d5d6d2;
+}
+
+.testing a{
+  color:#f9f7f6;
+}
+
 #courses {
   background-color: #ffde7a;
   font-family: "Marcellus", serif;
