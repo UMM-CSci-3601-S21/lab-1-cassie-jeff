@@ -30,6 +30,8 @@ h2{
 
   border:5px #a60c14 solid;
   margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right:50px;
   padding:10px;
   padding-top:0;
 }
@@ -71,13 +73,12 @@ h2{
 }
 
 #faculty {
-  margin:0;
   align-content: center;
 }
 
 #faculty > ul > li {
   display: inline-block;
-  padding: 50px;
+  padding: 25px;
 
 
 }
@@ -103,5 +104,22 @@ h2{
   padding:5px;
   text-align:center;
 }
+
+#tools ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #F9C803;
+  display:flex;
+  padding:25px;
+
+
+
+}
+
+#tools ul a{
+  text-decoration:none;
+}
+
 
 
