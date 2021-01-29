@@ -45,23 +45,25 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #19191E;
 }
 
 #style-selector li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float: left;
 }
 
 #style-selector li a {
   display: block;
-  color: white;
+  color: #F9C803;
   text-align: center;
-  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  font-family: fantasy;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
 #style-selector li a:hover {
   background-color: #F9C803;
+  color:#7a0019;
 }
 
 
