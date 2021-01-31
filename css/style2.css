@@ -17,26 +17,29 @@ h2{
   text-align: center;
 }
 
-#main-title{
+#main-title{  /*CSS rule 1, this is an example of using an id
+  This differs from the original because the text is left-justified
+  and the padding.  It also has a backdrop*/
   padding:25px;
   background-color: #7a0019;
   color:#F9C803;
   text-align: left;
 }
-.section {
-  margin:0;
-	padding:0;
+.section {  /*CSS rule 2, this is an example of using a class
+  The sections here are different from style sheet one as there is a
+  totally different color scheme, and a different color/style of border
+  the margins are also completely different, which gives it a shorter fatter look.
+*/
   background-color:#19191E;
   color:#F9C803;
-
   border:8px #a60c14 ridge;
   margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right:50px;
+  margin-left: 10%;
+  margin-right:10%;
   padding:10px;
-  padding-top:0;
+
 }
-/* Style selector/ navbar *******/
+
 #style-selector {
   position: fixed;
   background-color: #7a0019;
@@ -84,15 +87,17 @@ h2{
 
 }
 
-#faculty-list {
+#faculty-list { /*CSS Rule 3.  The faculty list is different than the
+  one in style sheet one because this style sheet has a more horizontal
+  look. The paddings between the names and office is also different
+  (This part is created in rules below)*/
   margin:auto;
-  padding:auto;
   padding-left: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+
 }
 
 .name{
@@ -106,21 +111,40 @@ h2{
   text-align:center;
 }
 
+.card-text, .card, .card a{ /*CSS rule 4 this is an example of grouping.  This is different from style
+  sheet one because we wanted to align the text, and remove the bullet points, we also changed the way the links
+  come up.  (This takes place in the rules below also) */
+  text-align: center;
+  list-style:none;
+}
+
+#validation a{
+  text-decoration-style:dotted;
+  color:#7a0019
+
+
+}
+#validation a:hover{
+  color:#F9C803;
+}
+
 
 
 #tools ul {
+  /*CSS rule 5, this is an example of nesting.  This differs form the original
+   style sheet, because the list is horizontally arranged rather than vertical,
+   colors and border type is also different here.  */
   list-style-type: none;
   background-color: #F9C803;
   border-style: ridge;
   border-color:#E0E0E2;
   display:flex;
-  padding:15px;
-  margin:6%;
-  padding:auto;
-  display: flex;
-  flex-direction: row;
+  padding:3%;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
+  text-align: center;
+  margin-right:15%;
+  margin-left:15%;
 }
 
 
@@ -141,3 +165,6 @@ h2{
 
 }
 
+#courses ul, #courses li{
+  list-style: square;
+}
