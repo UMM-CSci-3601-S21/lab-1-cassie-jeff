@@ -7,6 +7,164 @@ use float to make something locate itself on the right or left
 */
 
 body {
+  font-family: 'Oswald', sans-serif;
   padding: 30px;
-  background-color: #ffffff;
+  background-color:#E0E0E2;
+
+}
+h2{
+  font-size:40px;
+  text-align: center;
+}
+
+#main-title{  /*CSS rule 1, this is an example of using an id
+  This differs from the original because the text is left-justified
+  and the padding.  It also has a backdrop*/
+  padding:25px;
+  background-color: #7a0019;
+  color:#F9C803;
+  text-align: left;
+}
+.section {  /*CSS rule 2, this is an example of using a class
+  The sections here are different from style sheet one as there is a
+  totally different color scheme, and a different color/style of border
+  the margins are also completely different, which gives it a shorter fatter look.
+*/
+  background-color:#19191E;
+  color:#F9C803;
+  border:8px #a60c14 ridge;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right:10%;
+  padding:10px;
+
+}
+
+#style-selector {
+  position: fixed;
+  background-color: #7a0019;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+  padding-top: 10px;
+}
+
+#style-selector ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #19191E;
+}
+
+#style-selector li {
+  float: left;
+}
+
+#style-selector li a {
+  display: block;
+  color: #F9C803;
+  text-align: center;
+  font-family: fantasy;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#style-selector li a:hover {
+  background-color: #F9C803;
+  color:#7a0019;
+}
+
+#faculty {
+  align-content: center;
+}
+
+#faculty > ul > li {
+  display: inline-block;
+  padding: 25px;
+
+
+}
+
+#faculty-list { /*CSS Rule 3.  The faculty list is different than the
+  one in style sheet one because this style sheet has a more horizontal
+  look. The paddings between the names and office is also different
+  (This part is created in rules below)*/
+  margin:auto;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.name{
+  font-size:25px;
+  text-align: center;
+  padding:10px;
+}
+
+.office{
+  padding:5px;
+  text-align:center;
+}
+
+.card-text, .card, .card a{ /*CSS rule 4 this is an example of grouping.  This is different from style
+  sheet one because we wanted to align the text, and remove the bullet points, we also changed the way the links
+  come up.  (This takes place in the rules below also) */
+  text-align: center;
+  list-style:none;
+}
+
+#validation a{
+  text-decoration-style:dotted;
+  color:#7a0019
+
+
+}
+#validation a:hover{
+  color:#F9C803;
+}
+
+
+
+#tools ul {
+  /*CSS rule 5, this is an example of nesting.  This differs form the original
+   style sheet, because the list is horizontally arranged rather than vertical,
+   colors and border type is also different here.  */
+  list-style-type: none;
+  background-color: #F9C803;
+  border-style: ridge;
+  border-color:#E0E0E2;
+  display:flex;
+  padding:3%;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-right:15%;
+  margin-left:15%;
+}
+
+
+#tools ul a{
+  font-size: 20px;
+  text-decoration:none;
+}
+
+#tools li a{
+  padding:15px;
+  color:#7a0019;
+  font:bold ;
+
+}
+
+#tools a:hover{
+  color:#E0E0E2;
+
+}
+
+#courses ul, #courses li{
+  list-style: square;
 }
